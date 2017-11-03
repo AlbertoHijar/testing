@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="ddApp" ng-controller="myController">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My page</title>
+
+<link rel='stylesheet' href='/stylesheets/style.css' />
+
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="top-menu navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" ui-sref="home">D&W</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Listado</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div ui-view></div>
+
+    
+    
+<!-- jQuery -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- angular -->
+<script src="node_modules/angular/angular.min.js"></script>
+
+<!-- angular local -->
+<script src="node_modules/angular-i18n/angular-locale_es-es.js"></script>
+
+<!-- ui-router -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min.js"></script>
+<!-- Aplicación -->
+<script src="app.js"></script>
+<script src="controladores/controller.js"></script>
+<script src="routes/routes.js"></script>
+</body>
+</html>
