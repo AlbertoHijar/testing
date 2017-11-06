@@ -1,0 +1,13 @@
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Profesión</th>
+        <th>Descripción</th>
+    </tr>
+    <tr ng-repeat="persona in ctrl.personajes">
+        <th>{{persona.nombre}}</th>
+        <th>{{persona.profesion}}</th>
+        <th><a ui-sref="listado.personaje({personajeId: {{persona.id}} })">Detalles</a></th>
+    </tr>
+    <div ui-view></div>
+</table>

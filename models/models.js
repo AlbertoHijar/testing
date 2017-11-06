@@ -20,3 +20,10 @@ sequelize.sync().then(function(){
         };
     });
 });
+
+var createUser = function (req, res) {
+    var newUser = {
+        usuario: req.body.usuario,
+        contraseña: req.body.contraseña
+    }
+}
